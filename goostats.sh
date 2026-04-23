@@ -6,3 +6,4 @@ echo "Welcome to Nelle's stats script"
 min=$( cat ${fname} | sort | head -1)
 max=$( cat ${fname} | sort | tail -1)
 range=$( echo "${max}-${min}" | bc -l)
+echo $min $max $range
